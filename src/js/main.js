@@ -23,3 +23,17 @@ $(document).on('click', '[data-toggle="lightbox"]', function(){
   event.preventDefault();
   $(this).ekkoLightbox();
 });
+
+/*Initializing Slick.js slider
+slider is the selector used for jQuery. The testimonials are wrapper in a div with class="slider" on line 129 of about.html.
+.slick is called when the js engine gets to  <div class="slider"> in the code.
+.slick has some configuration options in a cinfig object:
+       "infinite: true"  means that the slider will continue to run o an infinite looop and keep repeating the testionials;
+       "slideToShow: 1" means that the testimonials will show on the screen one at a time;
+       "slideToScroll : 1" means that the testimonials can be scrolled one at a time;
+       */
+$('.slider').slick({
+    infinite: true,
+    slideToShow: 1,
+    slideToScroll: 1
+});
