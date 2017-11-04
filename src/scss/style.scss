@@ -109,3 +109,20 @@ footer#main-footer {
         margin-top: -50px;
     }
 }
+
+#faq {
+  .card {
+    border: #444;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .card-header {
+    background : rgb(182, 77, 77);
+  }
+  .card-body {
+    background: #fff; 
+
+  }
+}
