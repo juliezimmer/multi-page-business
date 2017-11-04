@@ -1,1 +1,42 @@
 // Main Sass File
+
+//navbar styling
+.navbar {
+  
+  //styles the nav links on the navbar
+  .nav-link {
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-left: 1em !important;
+      padding-right: 1em !important;
+    }
+
+  //styling for the active state of the navbar
+  // this styling applies to the nav items that have an active state
+  .nav-item.active {
+      border-left: #444 3px solid;
+    }  
+}
+
+.carousel-item {
+  //this sets the height of the carousel
+  height: 450px;
+}
+
+.carousel-image-1 {
+      background: url('../img/image1.jpg');
+      background-size: cover;
+
+}
+
+.carousel-image-2 {
+  background: url('../img/image2.jpg');
+  background-size: cover;
+
+}
+
+.carousel-image-3 {
+  background: url('../img/image3.jpg');
+  background-size: cover;
+
+}

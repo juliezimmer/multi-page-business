@@ -1,19 +1,107 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-    <head>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Bootstrap 4 Starter Pack</title>
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Multi-page Business Site</title>
+</head>
 
-    <body>
-        <h1>Bootstrap 4.0.0-beta Starter</h1>
+<body>
+  <!-- adding class="navbar-expand-sm" makes the navbar           collapse on sm and xs screens or expand on md, lg, and xl     screens. 
+    "nav" indicates a navbar element/tag
+    "navbar-dark" will have light text
+    "bg-dark" will make the background of the navbar dark -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Acme Company</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <!-- the id="navbarNav" in the div below points to and should match the data-target="#navbarNav" in the button above -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- class="ml-auto" is margin-left auto and pushes the nav items to the right -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+<!-- SHOWCASE SLIDING CAROUSEL -->
+  <section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <!-- the data-target="#myCarousel" points to and should match the id="myCarousel" in the div above. The first <li> tag has a class="active" because it is the first image or item in the carousel -->
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- class="carousel-image-1" provides a class for the background image that will be in the carousel. A class="active" is added to the div because this is the first image that should show up in the carousel -->
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+            <!-- class="d-none d-sm-block" is used so the caption only shows as a block item on screens that are md, lg, and xl --> 
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Heading One</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit nam suscipit veritatis laboriosam? Doloribus iste quis minima dolorem eligendi.</p>
+              <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
+            </div>
+          </div>
+        </div>
+    <!-- This is code from lines 57 - 66.  image-1 should be changed to image-2 --> 
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <!-- class="d-none d-sm-block" is used so the caption only shows as a block item on screens that are md, lg, and xl --> 
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="display-3">Heading Two</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit nam suscipit veritatis laboriosam? Doloribus iste quis minima dolorem eligendi.</p>
+              <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <!-- class="d-none d-sm-block" is used so the caption only shows as a block item on screens that are md, lg, and xl --> 
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Heading Three</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit nam suscipit veritatis laboriosam? Doloribus iste quis minima dolorem eligendi.</p>
+              <a href="#" class="btn btn-success btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end of carousel-inner div -->
+
+      <!-- carousel "next" and "previous" icon arrows (< and >) --> 
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
+        
