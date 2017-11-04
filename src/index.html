@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />"
   <link rel="stylesheet" href="css/style.css">
   <title>Multi-page Business Site</title>
 </head>
@@ -171,6 +172,102 @@
     </div>
   </section>
 
+<!-- PHOTO GALLERY -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h1 class="text-center">Photo Gallery</h1>
+      <p class="text-center">Check Out Our Photos</p>
+      <!-- start of first row of photos.
+           There are three rows of photos. 
+           Each row has three photos.
+           Total of 9 photos -->  
+      <div class="row mb-4">
+      <!-- 1st image in 1st row of photo gallery -->
+        <div class="col-md-4">
+          <!-- lorempixel.com is thie website where the photos come from
+                560/560 represents the size of the photos that will be downloaded
+                business is the category of photos
+                1 is an id number for the photo to link to
+                lightbox is a third-party script (echo lightbox) that needs to be sourced into the project -->
+          <a href="http://lorempixel.com/560/560/business/1" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="http://lorempixel.com/400/400/business/1" class="img-fluid">
+          </a> 
+        </div> <!-- end 1st image -->
+        
+      <!-- 2nd image in 1st row of photo gallery -->
+        <div class="col-md-4">
+          <a href="http://lorempixel.com/560/560/business/2" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="http://lorempixel.com/400/400/business/2" class="img-fluid"> 
+          </a>
+        </div> <!-- end 2nd image -->
+        
+      <!-- 3rd image in 1st row of photo gallery -->
+        <div class="col-md-4">
+          <a href="http://lorempixel.com/560/560/business/3" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="http://lorempixel.com/400/400/business/3" class="img-fluid"> 
+          </a>
+        </div> <!-- end 3rd image -->
+      </div> <!-- end  1st row of three photos -->
+
+  <!-- start 2nd ROW of three photos in photo gallery -->
+      <div class="row mb-4">
+      <!-- 1st image in 2nd row of photo gallery -->
+        <div class="col-md-4">
+          <a href="http://lorempixel.com/560/560/business/4" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="http://lorempixel.com/400/400/business/4" class="img-fluid">
+          </a> 
+        </div> <!-- end 1st image -->
+          
+      <!-- 2nd image in 2nd row of photo gallery -->
+        <div class="col-md-4">
+          <a href="http://lorempixel.com/560/560/business/5" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="http://lorempixel.com/400/400/business/5" class="img-fluid"> 
+          </a>
+        </div> <!-- end 2nd image -->
+          
+      <!-- 3rd image in 2nd row photo gallery -->
+        <div class="col-md-4">
+          <a href="http://lorempixel.com/560/560/business/6" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="http://lorempixel.com/400/400/business/6" class="img-fluid"> 
+          </a>
+        </div> <!-- end 3rd image -->
+      </div> <!-- end 2nd row of three photo gallery -->
+    </div>
+  </section>
+
+<!-- NEWSLETTER SECTION -->
+  <section id="newsletter" class="tect-center p-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Sign Up For Our Newsletter</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde consequuntur repellendus, quaerat possimus natus beatae. Minus excepturi vel autem velit.</p>
+          <form class="form-inline justify content-center">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Name">
+
+            <label for="name" class="sr-only">Email</label>
+            <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Email">
+            <button class="btn btn-primary" type="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- FOOTER -->
+  <footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy; 2017</p>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
 <!-- VIDEO MODAL -->
 <!-- the id="videoModal" points to and should match the data-target="#videoModal" in the a tage in the video Play section above. -->
   <div class="modal fade" id="videoModal">
@@ -182,13 +279,13 @@
         </div>
       </div>
     </div>
-
   </div>
 
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
